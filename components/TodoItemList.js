@@ -8,7 +8,7 @@ class TodoItemList extends Component{
     return (
       <div>
         <TodoItem text="안녕"/>
-        <TodoItem
+        <TodoItem text="React" />
       </div> 
    );
   };
