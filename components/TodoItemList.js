@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
+import TodoItem from './TodoItem';
 
 class TodoItemList extends Component{
   render(){
     const { todos, onToggle, onRemove} = this.props;
 
     return (
-      <div></div>
-    );
+      <div>
+        <TodoItem text="안녕"/>
+        <TodoItem
+      </div> 
+   );
   };
 }
 
