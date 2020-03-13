@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import TodoListTemplate from "./components/TodoListTemplate";
 import Form from "./components/Form";
+import Palette from "./components/Palette"
+
+const colors = ['#343a40', '#f03e3e', '#12b886', '#228ae6'];
+
 import TodoItemList from "./components/TodoItemList";
 
 class App extends Component {
@@ -81,6 +85,10 @@ class App extends Component {
             onCreate={handleCreate}
           />
         }
+
+        palette={(
+          <Palette color={color}/>
+        )}
       >
         <TodoItemList todos={todos} onToggle={handleToggle} onRemove={handleRemove} />
       </TodoListTemplate>
